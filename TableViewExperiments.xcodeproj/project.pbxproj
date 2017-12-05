@@ -11,6 +11,10 @@
 		B21A7A831FD15B7A0060EE2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B21A7A821FD15B7A0060EE2B /* Assets.xcassets */; };
 		B21A7A861FD15B7A0060EE2B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21A7A841FD15B7A0060EE2B /* MainMenu.xib */; };
 		B21A7A891FD15B7A0060EE2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B21A7A881FD15B7A0060EE2B /* main.m */; };
+		B21A7A921FD16CD20060EE2B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B21A7A911FD16CD20060EE2B /* Person.m */; };
+		B21A7A961FD4F0DC0060EE2B /* EditCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21A7A941FD4F0DC0060EE2B /* EditCameraController.m */; };
+		B21A7A971FD4F0DC0060EE2B /* EditCameraController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21A7A951FD4F0DC0060EE2B /* EditCameraController.xib */; };
+		B25109DF1FD6409400990B15 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = B25109DE1FD6409400990B15 /* Camera.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,13 @@
 		B21A7A871FD15B7A0060EE2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B21A7A881FD15B7A0060EE2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B21A7A8A1FD15B7A0060EE2B /* TableViewExperiments.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TableViewExperiments.entitlements; sourceTree = "<group>"; };
+		B21A7A901FD16CD20060EE2B /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B21A7A911FD16CD20060EE2B /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B21A7A931FD4F0DC0060EE2B /* EditCameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditCameraController.h; sourceTree = "<group>"; };
+		B21A7A941FD4F0DC0060EE2B /* EditCameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditCameraController.m; sourceTree = "<group>"; };
+		B21A7A951FD4F0DC0060EE2B /* EditCameraController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditCameraController.xib; sourceTree = "<group>"; };
+		B25109DD1FD6409400990B15 /* Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		B25109DE1FD6409400990B15 /* Camera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +72,13 @@
 				B21A7A871FD15B7A0060EE2B /* Info.plist */,
 				B21A7A881FD15B7A0060EE2B /* main.m */,
 				B21A7A8A1FD15B7A0060EE2B /* TableViewExperiments.entitlements */,
+				B21A7A901FD16CD20060EE2B /* Person.h */,
+				B21A7A911FD16CD20060EE2B /* Person.m */,
+				B21A7A931FD4F0DC0060EE2B /* EditCameraController.h */,
+				B21A7A941FD4F0DC0060EE2B /* EditCameraController.m */,
+				B21A7A951FD4F0DC0060EE2B /* EditCameraController.xib */,
+				B25109DD1FD6409400990B15 /* Camera.h */,
+				B25109DE1FD6409400990B15 /* Camera.m */,
 			);
 			path = TableViewExperiments;
 			sourceTree = "<group>";
@@ -123,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21A7A971FD4F0DC0060EE2B /* EditCameraController.xib in Resources */,
 				B21A7A831FD15B7A0060EE2B /* Assets.xcassets in Resources */,
 				B21A7A861FD15B7A0060EE2B /* MainMenu.xib in Resources */,
 			);
@@ -135,6 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21A7A961FD4F0DC0060EE2B /* EditCameraController.m in Sources */,
+				B25109DF1FD6409400990B15 /* Camera.m in Sources */,
+				B21A7A921FD16CD20060EE2B /* Person.m in Sources */,
 				B21A7A891FD15B7A0060EE2B /* main.m in Sources */,
 				B21A7A811FD15B7A0060EE2B /* AppDelegate.m in Sources */,
 			);
@@ -202,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -251,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -267,6 +289,7 @@
 				DEVELOPMENT_TEAM = 8EW27678PL;
 				INFOPLIST_FILE = TableViewExperiments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.edison.TableViewExperiments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -282,6 +305,7 @@
 				DEVELOPMENT_TEAM = 8EW27678PL;
 				INFOPLIST_FILE = TableViewExperiments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.edison.TableViewExperiments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

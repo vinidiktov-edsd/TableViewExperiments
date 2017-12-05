@@ -7,8 +7,20 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Person.h"
+#import "Camera.h"
+#import "EditCameraController.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
+    EditCameraController *editCameraController;
+
+}
+@property (weak) IBOutlet NSWindow *window;
+@property (nonatomic) NSMutableArray <Person *> *peopleArray;
+@property (nonatomic) NSMutableArray <Camera *> *cameras;
+@property (weak) IBOutlet NSTableView *tableView;
+@property (weak) IBOutlet NSArrayController *demoArrayController;
+- (IBAction)buttonPressed:(NSButton *)sender;
 
 
 @end
