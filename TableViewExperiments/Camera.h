@@ -23,6 +23,8 @@ typedef NS_ENUM(NSInteger, CameraType) {
 @property BOOL recording;
 @property NSString *audioSourceId;
 @property bool shouldShowAddressField;
+@property (nonatomic) int selectedAudioSourceIndex;
+@property (nonatomic) int selectedVideoSourceIndex;
 
 @property (nonatomic) NSMutableArray <NSString *> *audioSourceNames;
 @property (nonatomic) NSMutableArray <NSString *> *videoSourceNames;
